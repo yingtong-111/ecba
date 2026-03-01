@@ -1,0 +1,3052 @@
+{
+  "meta": {
+    "title": "ECBA Exam Practice (from PDF)",
+    "version": "1.0",
+    "source": "ECBA_without_discussion.pdf",
+    "generated_at": "2026-03-01"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "question": "What type of knowledge equips a business analyst (BA) with understanding market forces, customer segments, services, products, and regulations?",
+      "options": [
+        "Organizational",
+        "Industry",
+        "Solution",
+        "Methodological"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "question": "A focus group is a form of which type of research?",
+      "options": [
+        "Quantitative",
+        "Qualitative",
+        "Statistical",
+        "Theoretical"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "question": "Video conferencing, electronic calendars, and electronic voting are examples of:",
+      "options": [
+        "knowledge management tools.",
+        "mapping tools.",
+        "collaboration tools.",
+        "word processing tools."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "question": "When do the participants start generating ideas during a collaborative game?",
+      "options": [
+        "Closing step",
+        "Exploration step",
+        "Opening step",
+        "Iteration step"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "question": "For which part of an initiative is the business analyst (BA) responsible?",
+      "options": [
+        "Authorizing the project",
+        "Approving solution execution plans",
+        "Defining the solution approach",
+        "Accepting risk mitigation plans"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "question": "If a business analyst (BA) does not properly identify stakeholders, then the long-term implications are:",
+      "options": [
+        "increased costs.",
+        "reduced requirements.",
+        "higher satisfaction.",
+        "decreased risk."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "question": "Who is responsible for identifying the appropriate elicitation communication channels?",
+      "options": [
+        "Project manager",
+        "Subject matter expert",
+        "Business analyst",
+        "Business sponsor"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "question": "If inconsistencies arise between different elicitation results, the business analyst (BA) should:",
+      "options": [
+        "escalate them to the business sponsor.",
+        "report them to the project manager.",
+        "resolve them through collaboration.",
+        "reconcile them through experience."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "question": "Which of the following is a basis to initially prioritize requirements?",
+      "options": [
+        "Business benefits",
+        "Market demands",
+        "Organizational policy",
+        "Technological dependency"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "question": "Which action would a business analyst (BA) propose to improve the operation of the business?",
+      "options": [
+        "Simplify the work people perform",
+        "Outsource the operation team",
+        "Assist in the daily activities",
+        "Shadow the expert staff"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q11",
+      "type": "single",
+      "question": "What type of requirements describes the needs of those participating in or impacted by business analysis activities?",
+      "options": [
+        "Solution",
+        "Business",
+        "Stakeholder",
+        "Technical"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q12",
+      "type": "single",
+      "question": "Which type of stakeholder is responsible for initiating the effort to define a business need?",
+      "options": [
+        "Project manager",
+        "Regulator",
+        "Business analyst",
+        "Sponsor"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q13",
+      "type": "single",
+      "question": "Who is responsible for discovering, synthesizing, and analyzing information within an enterprise?",
+      "options": [
+        "Project manager",
+        "Business analyst",
+        "Programmer",
+        "Project sponsor"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q14",
+      "type": "single",
+      "question": "Which activity is a business analyst (BA) performing when ensuring that a set of requirements is developed with enough detail to be usable by a particular stakeholder?",
+      "options": [
+        "Validating requirements",
+        "Verifying requirements",
+        "Eliciting requirements",
+        "Specifying requirements"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q15",
+      "type": "single",
+      "question": "What is the main purpose of the `Approve Requirements` task?",
+      "options": [
+        "Obtain agreement",
+        "Establish requirements baseline",
+        "Select appropriate techniques",
+        "Assess alternative approaches"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q16",
+      "type": "single",
+      "question": "Which approach aligns to approval of requirements at the end of a phase?",
+      "options": [
+        "Adaptive",
+        "Modelling",
+        "Predictive",
+        "Prioritization"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q17",
+      "type": "single",
+      "question": "When can a change to requirements occur?",
+      "options": [
+        "As soon as the testing process has begun",
+        "At any time during the project lifecycle",
+        "Only after requirements have been approved",
+        "Only after the solution has been designed"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q18",
+      "type": "single",
+      "question": "In addition to schedule, which other factor must be considered when evaluating changes to requirements?",
+      "options": [
+        "Number of customers and end-users affected",
+        "Capacity of the requirements management tool",
+        "Amount of time needed to create new documents",
+        "Agreement by executive board members"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q19",
+      "type": "single",
+      "question": "Which of the following activities are performed during the requirements life cycle management phase?",
+      "options": [
+        "Elicit Requirements",
+        "Prioritize Designs",
+        "Trace Requirements",
+        "Maintain Attributes"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q20",
+      "type": "single",
+      "question": "Which techniques should be applied to prioritize requirements?",
+      "options": [
+        "Risk Analysis and Management",
+        "Decision Modelling and Estimation",
+        "Interface Analysis and Interviews",
+        "Document Analysis and Vendor Assessment"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q21",
+      "type": "single",
+      "question": "Which input is used to prepare for elicitation?",
+      "options": [
+        "Activity plan",
+        "Business analysis information",
+        "Stakeholder engagement approach",
+        "Change strategy"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q22",
+      "type": "single",
+      "question": "What are characteristics of effective communication of business analysis information?",
+      "options": [
+        "Concise and consistent",
+        "Timely and segmented",
+        "Detailed and verbal",
+        "Bi-directional and iterative"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q23",
+      "type": "single",
+      "question": "When validating requirements, assumptions are:",
+      "options": [
+        "documented after conducting further analysis.",
+        "based and assessed on previous experience.",
+        "vital to support strategic decisions and goals.",
+        "defined so that associated risk can be managed."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q24",
+      "type": "single",
+      "question": "The requirements elicitation technique used to iteratively validate the needs of stakeholders that interact with the application is:",
+      "options": [
+        "interface analysis",
+        "observation.",
+        "prototyping",
+        "reverse engineering."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q25",
+      "type": "single",
+      "question": "Which of the following is an activity that a business analyst (BA) performs to prepare for elicitation?",
+      "options": [
+        "Assess risk",
+        "Trace requirements",
+        "Secure supporting material",
+        "Analyze performance measures"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q26",
+      "type": "single",
+      "question": "Which of the following is the integrated output that correctly reflects captured information agreed to by business analysts (BAs) and other stakeholders?",
+      "options": [
+        "Activity plan",
+        "Business analysis information",
+        "Concept model",
+        "Confirmed elicitation results"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q27",
+      "type": "single",
+      "question": "Which of the following approaches is used to determine how business analysis data will be packaged and communicated to stakeholders?",
+      "options": [
+        "Business Analysis Approach",
+        "Information Management Approach",
+        "Governance Approach",
+        "Stakeholder Engagement Approach"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q28",
+      "type": "single",
+      "question": "Which of the following characteristics verifies that a requirement has been fulfilled?",
+      "options": [
+        "Atomic",
+        "Concise",
+        "Feasible",
+        "Testable"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q29",
+      "type": "single",
+      "question": "What is the approach in which solution components are assembled, constructed, or developed by experts as a direct response to a set of requirements?",
+      "options": [
+        "Create",
+        "Design",
+        "Purchase",
+        "Scope"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q30",
+      "type": "single",
+      "question": "What tool classifies stakeholders according to responsibility?",
+      "options": [
+        "Stakeholder Map",
+        "Personas",
+        "RACI Matrix",
+        "Stakeholder List"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q31",
+      "type": "single",
+      "question": "What tool can be used to determine the impact of a changed requirement on other requirements?",
+      "options": [
+        "Verification",
+        "Traceability",
+        "Interview",
+        "Workshop"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q32",
+      "type": "single",
+      "question": "Which criteria are necessary when the requirements express contractual obligations?",
+      "options": [
+        "Evaluation",
+        "Solution",
+        "Acceptance",
+        "Approval"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q33",
+      "type": "single",
+      "question": "What are the two basic types of interviews to elicit business analysis information?",
+      "options": [
+        "Closed and open ended",
+        "Unstructured and structured",
+        "Planned and unplanned",
+        "Face-to-face and telephonic"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q34",
+      "type": "single",
+      "question": "What task is performed to ensure that all requirements align to the business need?",
+      "options": [
+        "Model Requirements",
+        "Prioritize Requirements",
+        "Validate Requirements",
+        "Define Requirements"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q35",
+      "type": "single",
+      "question": "Which of the following techniques is used to identify the elements and boundaries of the requirements architecture?",
+      "options": [
+        "Functional decomposition",
+        "Environmental scan",
+        "Scope modelling",
+        "Interface analysis"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q36",
+      "type": "single",
+      "question": "Which of the following accurately describes a stakeholder's role during future state analysis?",
+      "options": [
+        "A regulator would ensure an envisioned future state can be sufficiently tested and can help set an appropriate level of quality to target.",
+        "An end user would help determine which business needs to address and sets the business objective that a future state will achieve.",
+        "A project manager would be directly involved in supporting the operations of the enterprise.",
+        "A domain subject matter expert would provide insight into current state and potential states."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q37",
+      "type": "single",
+      "question": "Why should a business analyst (BA) perform a cultural assessment when analyzing the current state of an enterprise?",
+      "options": [
+        "To determine whether stakeholders understand the rationale for the current state of the enterprise",
+        "To identify the formal relationships between people working in the enterprise",
+        "To document the communication channels, reporting structures, and relationships in the enterprise",
+        "To understand the scope of decision making at different levels of the enterprise"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q38",
+      "type": "single",
+      "question": "What is a logical data model used for?",
+      "options": [
+        "Abstracting a 'conceptual data model' to incorporate the rules of normalization to manage data integrity and relationships.",
+        "Abstracting a 'physical data model' to describe the physical organization of data and its relationships within a database.",
+        "Defining the logical rules that govern decisions in an organization and that define, constrain, or enable organizational operations.",
+        "Defining a solution independent view of how a business perceives its information without applying any constraints."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q39",
+      "type": "single",
+      "question": "Which technique is used by business analysts (BAs) to measure the quality of requirements?",
+      "options": [
+        "Acceptance and Evaluation Criteria",
+        "Key Performance Indicators",
+        "Risk Analysis and Management",
+        "Entity Relationship Modelling"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q40",
+      "type": "single",
+      "question": "What is the input status of requirements used by business analysts (BAs) for undertaking requirement verification activities?",
+      "options": [
+        "Stated and Unconfirmed",
+        "Maintained and Reusable",
+        "Specified and Modeled",
+        "Validated and Prioritized"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q41",
+      "type": "single",
+      "question": "If a business analyst (BA) asks questions during the job shadowing with a subject matter expert, which approach is being used?",
+      "options": [
+        "Active Observation Approach",
+        "Contextual Inquiry Observation",
+        "Inactive Observation Approach",
+        "Passive Observation Approach"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q42",
+      "type": "single",
+      "question": "What is a risk that business analysts (BAs) look for when managing stakeholder engagement?",
+      "options": [
+        "Scope creep",
+        "Delayed approvals",
+        "Inaccurate cost estimated",
+        "Resource shortfalls"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q43",
+      "type": "single",
+      "question": "What tool is used by a business analyst (BA) for quality control when verifying requirements and designs?",
+      "options": [
+        "Interviews",
+        "Estimation",
+        "Benchmarking",
+        "Checklists"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q44",
+      "type": "single",
+      "question": "When initially assigned work, understanding the scope of elicitation is important in order to:",
+      "options": [
+        "review the project charter.",
+        "identify the stakeholders.",
+        "discover the requirements.",
+        "plan the business analysis approach"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q45",
+      "type": "single",
+      "question": "A solution is considered to be successful when the:",
+      "options": [
+        "stakeholders' expectations are met.",
+        "organization is ready to accept it.",
+        "performance evaluation is positive.",
+        "business need is satisfied."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q46",
+      "type": "single",
+      "question": "What are matrices in modelling formats used to describe?",
+      "options": [
+        "Detailed procedure flow",
+        "Gaps in capability analysis",
+        "Complex but uniform structures",
+        "Hierarchical structure of stakeholders"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q47",
+      "type": "single",
+      "question": "A business analyst (BA) will regularly perform stakeholder analysis to understand which of the following?",
+      "options": [
+        "Attitudes and influence",
+        "Goals and objectives",
+        "Changes in business needs",
+        "Communication channels"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q48",
+      "type": "single",
+      "question": "What happens when either the number of requirements or level of formality increase?",
+      "options": [
+        "Developing new requirements becomes difficult.",
+        "More time is required to complete the project.",
+        "More effort is needed to trace requirements.",
+        "Rejecting requirements is likely to increase."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q49",
+      "type": "single",
+      "question": "What analysis needs to be performed in order to evaluate the effect of change?",
+      "options": [
+        "Competitive",
+        "Decision",
+        "Modeling",
+        "Impact"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q50",
+      "type": "single",
+      "question": "Stakeholders commonly face challenges in prioritizing requirements due to:",
+      "options": [
+        "lack of knowledge.",
+        "project time constraints.",
+        "different perceived values.",
+        "inability to work with others."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q51",
+      "type": "single",
+      "question": "Which of the following items is commonly used by a business analyst (BA) during requirements verification?",
+      "options": [
+        "A checklist with a standard set of quality elements",
+        "A business model canvas with financial estimates",
+        "A benchmarking report with industry comparisons",
+        "A user story with inputs and outputs"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q52",
+      "type": "single",
+      "question": "Which cost is estimated based on the alternative results that might have been achieved if the resources devoted to one design option had been allocated to another design option?",
+      "options": [
+        "Implementation",
+        "Maintenance",
+        "Opportunity",
+        "Purchase"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q53",
+      "type": "single",
+      "question": "The process of assigning requirements to solution components and releases to best achieve the objectives is called:",
+      "options": [
+        "requirements classification schema.",
+        "requirements traceability.",
+        "requirements allocation.",
+        "requirements architecture."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q54",
+      "type": "single",
+      "question": "A technique that is used to elicit information by viewing and understanding activities and their context is known as:",
+      "options": [
+        "workshop.",
+        "observation.",
+        "brainstorming.",
+        "review."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q55",
+      "type": "single",
+      "question": "Which type of elicitation involves obtaining information by controlled test?",
+      "options": [
+        "Research",
+        "Experiment",
+        "Interview",
+        "Collaboration"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q56",
+      "type": "single",
+      "question": "What is a definitional rule?",
+      "options": [
+        "A representation of the operational knowledge of the organization",
+        "An obligation or prohibition of conduct, action, practice, or procedure",
+        "A rule that can be violated",
+        "A representation of the behavior of people"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q57",
+      "type": "single",
+      "question": "When stakeholder collaboration is not properly managed, poor relationships can have the following damaging effect on business analysis:",
+      "options": [
+        "strong negative reactions to obstacles.",
+        "lack of support for organizational goals.",
+        "resistance to approving elicitation results.",
+        "failure to meet project deadlines."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q58",
+      "type": "single",
+      "question": "A business analyst (BA) is someone who elicits the actual needs of organizational stakeholders:",
+      "options": [
+        "in any capacity, regardless of job title.",
+        "in a project team, with an ‫ג‬€analyst‫ג‬€ job title.",
+        "in a project team, regardless of job title.",
+        "in any capacity, with an ‫ג‬€analyst‫ג‬€ job title."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q59",
+      "type": "single",
+      "question": "The likelihood that the requirement will change because it requires further analysis is termed as:",
+      "options": [
+        "stability.",
+        "benefit.",
+        "dependency.",
+        "penalty."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q60",
+      "type": "single",
+      "question": "Inputs to prepare for elicitation include:",
+      "options": [
+        "information management approach and solution scope.",
+        "needs and stakeholder engagement approach.",
+        "future state description and risk analysis results.",
+        "requirements and designs."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Stakeholder engagement approach - Reference: https://thefunctionalba.com/2019/06/how-to-prepare-for-elicitation/",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q61",
+      "type": "single",
+      "question": "What are the participant roles in reviews?",
+      "options": [
+        "Domain SME, regulator, sponsor, project manager",
+        "Customer, supplier, end user, business analyst",
+        "Author, reviewer, facilitator, scribe",
+        "Approver, administrator, reviewer, tester"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q62",
+      "type": "single",
+      "question": "What technique is used to elicit business analysis information, including contextual understanding and requirements, by examining available materials that describe either the business environment or existing organizational assets?",
+      "options": [
+        "Organizational modeling",
+        "Document analysis",
+        "Functional decomposition",
+        "Data flow diagrams"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q63",
+      "type": "single",
+      "question": "Establishing the design option that is appropriate to meet the enterprise's requirements is the purpose of which task?",
+      "options": [
+        "Define requirements architecture",
+        "Analyze potential value and recommend solution",
+        "Define design options",
+        "Specify and model requirements"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q64",
+      "type": "single",
+      "question": "Which of the following is an example of a requirements viewpoint?",
+      "options": [
+        "Use case",
+        "Mind map",
+        "Expert judgement",
+        "Item tracking"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q65",
+      "type": "single",
+      "question": "Which of the following techniques would a business analyst (BA) use to conduct elicitation?",
+      "options": [
+        "Prioritization",
+        "Reviews",
+        "Observation",
+        "Estimation"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q66",
+      "type": "single",
+      "question": "Which core concept defines a specific way of satisfying one or more needs in a context?",
+      "options": [
+        "Value",
+        "Change",
+        "Solution",
+        "Priority"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "A solution is a specific way of satisfying a need in a context. Reference: https://www.iiba.org/professional-development/knowledge-centre/articles/needs-and-solutions/",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q67",
+      "type": "single",
+      "question": "Which technique represents a small, concise statement of functionality or quality needed to deliver value to a specific stakeholder?",
+      "options": [
+        "User stories",
+        "Lessons learned",
+        "Business case",
+        "Scope modelling"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q68",
+      "type": "single",
+      "question": "What requirements are good candidates for reuse?",
+      "options": [
+        "Requirements without direct ties to a particular tool",
+        "Requirements expressed in more detail",
+        "Requirements at low levels of abstraction",
+        "Requirements with specific references to departments"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Reference: BABOK v.3.0 ‫ג‬€\" IIBA (page 95)",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q69",
+      "type": "single",
+      "question": "When approving requirements, conflict and issue management is an element used to assist in:",
+      "options": [
+        "measuring performance indicators.",
+        "identifying activities.",
+        "obtaining consensus among stakeholders.",
+        "performing quality control."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q70",
+      "type": "single",
+      "question": "When should prioritization of requirements take place?",
+      "options": [
+        "At the very beginning of an initiative only",
+        "After the maintain requirements and trace requirements tasks have been completed",
+        "Continually throughout the initiative",
+        "After the maintain requirements task has been completed"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q71",
+      "type": "single",
+      "question": "Conducting elicitation by asking questions and documenting responses from relevant stakeholders has the following strength:",
+      "options": [
+        "prioritization setting.",
+        "analytical thinking.",
+        "sharing of information.",
+        "encouraging participation."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q72",
+      "type": "single",
+      "question": "Which of the following business analysis activities might be undertaken to verify requirements?",
+      "options": [
+        "Identifying a previously documented business need",
+        "Comparing a model with another relevant model",
+        "Organizing requirements into structures",
+        "Evaluating alignment with solution scope"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q73",
+      "type": "single",
+      "question": "Requirements allocation is an element of which task?",
+      "options": [
+        "Specify and model requirements",
+        "Verify requirements",
+        "Define requirements architecture",
+        "Define design options"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q74",
+      "type": "single",
+      "question": "In the define design options task, which of the following relates to the identify improvement opportunities element?",
+      "options": [
+        "Assess issues, define risks, confirm elicitation results",
+        "Create flow diagrams, purchase solutions components, secure resources",
+        "Increase efficiencies, identify additional capabilities, improve access to information",
+        "Define change strategy, analyze current state, prioritize requirements"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Identify Improvement OpportunitiesWhen proposing design options, a number of opportunities to improve the operation of the business may occur and are compared.Some common examples of opportunities include: Increase Efficiencies: automate or simplify the work people perform by re-engineering or sharing processes, changing responsibilities, or outsourcing. Automation may also increase consistency of behaviour, reducing the likelihood of different stakeholders performing the same function in distinctly different fashions. Improve Access to Information: provide greater amounts of information to staff who interface directly or indirectly with customers, thereby reducing the need for specialists. Identify Additional Capabilities: highlight capabilities that have the potential to provide future value and can be supported by the solution. These capabilities may not necessarily be of immediate value to the organization (for example, a software application with features the organization anticipates using in the future).",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q75",
+      "type": "single",
+      "question": "Which behavioural characteristic enables the business analyst (BA) to establish credibility by ensuring that business analysis efforts meet the needs of the business?",
+      "options": [
+        "Ethics",
+        "Trustworthiness",
+        "Personal Accountability",
+        "Adaptability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q76",
+      "type": "single",
+      "question": "Which of the following are criteria used to determine quality requirements relationships?",
+      "options": [
+        "Necessity, validate, derive",
+        "Complexity, stability, status",
+        "Necessary, consistent, correct",
+        "Penalty, benefit, cost"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q77",
+      "type": "single",
+      "question": "The approach that defines how requirements will be re-used is the:",
+      "options": [
+        "governance approach.",
+        "approach to identifying business analysis improvements.",
+        "information management approach.",
+        "business analysis approach."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q78",
+      "type": "single",
+      "question": "In a use case, which is one of the two commonly used relationships?",
+      "options": [
+        "Inherit",
+        "Identify",
+        "Distribute",
+        "Extend"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "There are two commonly used relationships between use cases: Extend: allows for the insertion of additional behavior into a use case. The use case that is being extended must be completely functional in its own right and must not depend on the extending use case for its successful execution. This relationship may be used to show that an alternate flow has been added to an existing use case (representing new requirements). Include: allows for the use case to make use of functionality present in another use case. The included use case does not need to be a complete use case in its own right if it is not directly triggered by an actor. This relationship is most often used either when some shared functionality is required by several use cases or to abstract out a complex piece of logic.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q79",
+      "type": "single",
+      "question": "Which stakeholder group is involved in regularly maintaining requirements and ensuring that the requirements list accurately reflects stated needs?",
+      "options": [
+        "Implementation subject matter expert",
+        "Domain subject matter expert",
+        "Operational support",
+        "Business analyst"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q80",
+      "type": "single",
+      "question": "What skill is required by a business analyst (BA) to understand how the people, processes, and technology within an organization interact, to understand the enterprise from a holistic point of view?",
+      "options": [
+        "Creative thinking",
+        "Conceptual thinking",
+        "Problem solving",
+        "Systems thinking"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Systems thinking is an understanding how the people, processes, and technology within an organization interact allows business analysts to understand the enterprise from a holistic point of view.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q81",
+      "type": "single",
+      "question": "Which technique would the business analyst (BA) consider to show the transformation of data?",
+      "options": [
+        "Sequence diagram",
+        "Data flow diagram",
+        "Data modelling",
+        "Flowchart"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "A data flow diagram illustrates the movement and transformation of data between externals (entities) and processes. The output from one external or process is the input to another. The data flow diagram also illustrates the temporary or permanent repositories (referred to as data stores or terminators) where data is stored within a system or an organization. The data defined should be described in a data dictionary.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q82",
+      "type": "single",
+      "question": "While assessing requirements changes, a business analyst (BA) will determine the formality of the assessment process based on:",
+      "options": [
+        "governance approach.",
+        "business analysis approach.",
+        "change strategy.",
+        "potential value."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Business analysts will determine the formality of the assessment process based on the information available, the apparent importance of the change, and the governance process. Many proposed changes may be withdrawn from consideration or declined before any formal approval is required. A predictive approach may indicate a more formal assessment of proposed changes.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q83",
+      "type": "single",
+      "question": "What is the optimum group size for brainstorming?",
+      "options": [
+        "It doesn't matter how many individuals as long as the project manager is included",
+        "The more individuals the better",
+        "Six to eight individuals who represent a range of backgrounds",
+        "A maximum of three individuals with a deep knowledge of the subject"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q84",
+      "type": "single",
+      "question": "Which of the following tasks is part of the business analysis planning and monitoring knowledge area?",
+      "options": [
+        "Trace requirements",
+        "Plan stakeholder engagement",
+        "Analyze current state",
+        "Assess solution limitations"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Reference: BABOK v.3.0 ‫ג‬€\" IIBA (31)",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q85",
+      "type": "single",
+      "question": "Which business analysis technique draws on frameworks and methodologies such as Six Sigma and Lean?",
+      "options": [
+        "Document analysis",
+        "Business rules analysis",
+        "Data flow diagrams",
+        "Process analysis"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Reference: BABOK v.3.0 ‫ג‬€\" IIBA (324)",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q86",
+      "type": "single",
+      "question": "Which of the following is an input to the prepare for elicitation task?",
+      "options": [
+        "Elicitation activity plan",
+        "Set up logistics",
+        "Potential value",
+        "Needs"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q87",
+      "type": "single",
+      "question": "When planning elicitation activities, which technique could be used to determine the possible participants and their roles?",
+      "options": [
+        "Stakeholder list, map, or personas",
+        "Data mining",
+        "Roles and permissions matrix",
+        "Risk analysis and management"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q88",
+      "type": "single",
+      "question": "Which type of requirements are temporary in nature?",
+      "options": [
+        "Business requirements",
+        "Solution requirements",
+        "Stakeholder requirements",
+        "Transition requirements"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "A requirement that describes the capabilities the solution must have and the conditions the solution must meet to facilitate transition from the current state to the future state, but which are not needed once the change is complete. They are differentiated from other requirements types because they are of a temporary nature.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q89",
+      "type": "single",
+      "question": "What is the relationship between two requirements called when one requirement can be deduced from another at a higher level?",
+      "options": [
+        "Satisfy",
+        "Necessity",
+        "Effort",
+        "Derive"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Derive: relationship between two requirements, used when a requirement is derived from another requirement. This type of relationship is appropriate to link the requirements on different levels of abstraction. For example, a solution requirement derived from a business or a stakeholder requirement.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q90",
+      "type": "single",
+      "question": "One element of the task plan business analysis information management is:",
+      "options": [
+        "complexity and risk.",
+        "change control process.",
+        "level of abstraction.",
+        "decision making authority."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q91",
+      "type": "single",
+      "question": "Which business analysis activity ensures that a set of requirements or designs delivers business value and supports the organization's goal and objectives?",
+      "options": [
+        "Define solution options",
+        "Verify requirements",
+        "Validate requirements",
+        "Define requirements architecture"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Validate requirements ensures that a set of requirements or designs delivers business value and supports the organization's goals and objectives.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q92",
+      "type": "single",
+      "question": "The task that uses the elicitation activity plan to draw out, explore and identify information relevant to the change is:",
+      "options": [
+        "conduct elicitation.",
+        "prepare for elicitation.",
+        "plan business analysis information.",
+        "confirm elicitation results."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "The purpose of Conduct Elicitation is to draw out, explore, and identify information relevant to the change.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q93",
+      "type": "single",
+      "question": "When planning business analysis information management, what are the factors that influence storage and access decisions?",
+      "options": [
+        "Organizational values and procurement strategy",
+        "Business rules and change strategy",
+        "Business policies and methodology adopted",
+        "Organizational standards and tool availability"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Business analysis information can be stored in many ways. Storage decisions depend on many factors such as who must access the information, how often they need to access it, and what conditions must be present for access. Organizational standards and tool availability also influence storage and access decisions. The business analysis approach defines how various tools will be used on the initiative and how the information will be captured and stored within those tools. Tools may shape the selection of business analysis techniques, notations to be used, and the way that information is organized.",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q94",
+      "type": "single",
+      "question": "An atomic requirement:",
+      "options": [
+        "is understood independently of other requirements or designs.",
+        "contains no extraneous or unnecessary content.",
+        "uses common terminology understood by the audience.",
+        "aligns with the identified needs of the stakeholders."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q95",
+      "type": "single",
+      "question": "What characterizes a good collaboration with stakeholders?",
+      "options": [
+        "Direct and frequent communication with the most influential stakeholders",
+        "Regular, frequent and bi-directional communication with all stakeholders",
+        "Occasional communication with stakeholders when obstacles occur",
+        "Regular exchange of information, ideas, innovations with only supportive stakeholders"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q96",
+      "type": "single",
+      "question": "Which of the following tasks is included in the requirements analysis and design definition knowledge area?",
+      "options": [
+        "Assess requirements changes",
+        "Recommend actions to increase solution value",
+        "Analyze potential value and recommend solution",
+        "Define change strategy"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q97",
+      "type": "single",
+      "question": "What is a valid reason for prioritization?",
+      "options": [
+        "Requirements which are of significant personal interest to a stakeholder",
+        "Effort and resources needed to implement a requirement",
+        "Sponsor's wish-list",
+        "Development team's advice to implement easy requirements"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q98",
+      "type": "single",
+      "question": "What of the following represents a typical factor that influences the prioritization of requirements?",
+      "options": [
+        "Scope",
+        "Impact",
+        "Value",
+        "Cost"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q99",
+      "type": "single",
+      "question": "Which task is performed when the business analyst (BA) ensures that stakeholders have a shared understanding of the outcomes of elicitation?",
+      "options": [
+        "Conduct elicitation",
+        "Manage stakeholder collaboration",
+        "Communicate business analysis information",
+        "Confirm elicitation results"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q100",
+      "type": "single",
+      "question": "Elicitation results need to be confirmed to ensure:",
+      "options": [
+        "stakeholders are encouraged to work towards a common goal.",
+        "information relevant to change is explored, drawn out and identified.",
+        "scope of elicitation activity is understood and the right technique is selected.",
+        "information gathered is accurate and consistent with other information."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q101",
+      "type": "single",
+      "question": "During the requirement life cycle management, what should a business analyst (BA) do to extend the value of requirements beyond the current initiative?",
+      "options": [
+        "Assess",
+        "Maintain",
+        "Trace",
+        "Prioritize"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q102",
+      "type": "single",
+      "question": "In which state should elicitation results be in order to begin modelling of requirements?",
+      "options": [
+        "Unconfirmed",
+        "Any",
+        "Confirmed",
+        "Documented"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q103",
+      "type": "single",
+      "question": "When selecting an elicitation technique, the business analyst (BA) should consider techniques that are:",
+      "options": [
+        "commonly used in similar initiatives.",
+        "easy to use.",
+        "already known by stakeholders.",
+        "popular in the industry."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q104",
+      "type": "single",
+      "question": "When defining the requirements architecture, a business analyst (BA) examines the relationships among requirements to ensure that they satisfy the following quality criteria:",
+      "options": [
+        "prioritized, understandable, familiar, kinesthetic, visual.",
+        "defined, necessary, correct, unambiguous, consistent.",
+        "value-add, functional, auditable, edited, approved.",
+        "atomic, complete, concise, feasible, testable."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q105",
+      "type": "single",
+      "question": "Which of the following techniques is used when recommendations for improvement are supported by objective and quantitative evidence?",
+      "options": [
+        "Observation",
+        "Functional decomposition",
+        "Balanced scorecard",
+        "Estimation"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q106",
+      "type": "single",
+      "question": "Requirements that can be reused in the long term have which of the following characteristics?",
+      "options": [
+        "Detailed references to an application",
+        "Direct ties to a specific requirements tool",
+        "Specific connections to one or more departments",
+        "Limited or no references to specific solutions"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q107",
+      "type": "single",
+      "question": "Business analysis is the practice of enabling change in an enterprise by:",
+      "options": [
+        "defining organizational needs and recommending solutions.",
+        "identifying pain points and recommending alternatives.",
+        "listening to stakeholder feedback and documenting their issues.",
+        "understanding strategic objectives and improving internal processes."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q108",
+      "type": "single",
+      "question": "In which task would the business analyst (BA) engage the stakeholders to help them support change?",
+      "options": [
+        "Conduct elicitation",
+        "Plan business analysis approach",
+        "Manage stakeholder collaboration",
+        "Plan change strategy"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q109",
+      "type": "single",
+      "question": "The purpose of using process analysis is to:",
+      "options": [
+        "identify and evaluate the underlying causes of a problem.",
+        "improve decision making by finding useful patterns.",
+        "understand factors to be included in a contract negotiation.",
+        "describe the sequential flow of work or activities."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q110",
+      "type": "single",
+      "question": "Which of the following is a guideline or tool, often provided by third parties, used for defining design options?",
+      "options": [
+        "Future state description",
+        "Traced requirements",
+        "Existing solutions",
+        "Solution scope"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q111",
+      "type": "single",
+      "question": "A stakeholder who verifies that prioritized requirements will deliver value from a customer perspective is the:",
+      "options": [
+        "domain subject matter expert.",
+        "regulator.",
+        "end user.",
+        "sponsor."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q112",
+      "type": "single",
+      "question": "What is the highest level of a data flow diagram called?",
+      "options": [
+        "Prime level",
+        "Swim lane",
+        "Context diagram",
+        "Rollup diagram"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q113",
+      "type": "single",
+      "question": "Which of the following is a characteristic of predictive planning approach?",
+      "options": [
+        "Activities are divided into iterations",
+        "Requirements are gathered through team interaction and feedback",
+        "Tasks are performed recurrently",
+        "Information is captured in standardized templates"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q114",
+      "type": "single",
+      "question": "Supporting materials that a business analyst (BA) might seek to secure while preparing for elicitation include:",
+      "options": [
+        "system costs, business revenues, organizational designs, and rules.",
+        "system names, business contacts, organizational forms, and protocols.",
+        "system documents, business rules, organizational policies, and regulations.",
+        "system limits, business models, organizational structures, and principles."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q115",
+      "type": "single",
+      "question": "Which of the following is a common type of elicitation?",
+      "options": [
+        "Discussion",
+        "Research",
+        "Exploration",
+        "Examination"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q116",
+      "type": "single",
+      "question": "Which of the following techniques is used to elicit business analysis information by examining available materials that describe either the business environment or existing organizational assets?",
+      "options": [
+        "Process analysis",
+        "Use cases and scenarios",
+        "Observation",
+        "Document analysis"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q117",
+      "type": "single",
+      "question": "What is the purpose of brainstorming?",
+      "options": [
+        "To collaboratively choose a final design",
+        "To produce numerous new ideas",
+        "To receive feedback on a design or prototype",
+        "To improve stakeholder collaboration"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q118",
+      "type": "single",
+      "question": "Why would a business analyst (BA) want to define stakeholder assumptions?",
+      "options": [
+        "To determine needed organizational changes",
+        "To assess model completeness",
+        "To clarify requirements",
+        "To manage risk"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q119",
+      "type": "single",
+      "question": "The requirements life cycle ends when:",
+      "options": [
+        "solution and the requirements that represent it are retired.",
+        "all requirements are verified and validated by the stakeholders.",
+        "solution is implemented and the project team disbands.",
+        "solution is defined and approved by the stakeholders."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q120",
+      "type": "single",
+      "question": "To ensure that \"all requirements and designs align to business requirements\" is the purpose of which task?",
+      "options": [
+        "Conduct elicitation",
+        "Verify requirements",
+        "Validate requirements",
+        "Assess risks"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q121",
+      "type": "single",
+      "question": "“Needs” and “stakeholder engagement approach” are the inputs to which task in the elicitation and collaboration knowledge area?",
+      "options": [
+        "Elicitation analysis",
+        "Conduct elicitation",
+        "Stakeholder collaboration",
+        "Prepare for elicitation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q122",
+      "type": "single",
+      "question": "Which of the following core competencies fall under the BABOK's underlying competency “analytical thinking and problem solving”?",
+      "options": [
+        "Leadership and influencing, facilitation and teamwork",
+        "Industry knowledge, conceptual thinking and business acumen",
+        "Learning systems thinking and decision making",
+        "Decision making ethics and adaptability"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q123",
+      "type": "single",
+      "question": "The business analysis core concept model (BACCM™) describes which of the following as “the act of transformation in response to a need”?",
+      "options": [
+        "Change",
+        "Solution",
+        "Context",
+        "Need"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q124",
+      "type": "single",
+      "question": "Which elicitation type involves the discovery of information under controlled tests?",
+      "options": [
+        "Research",
+        "Collaborative",
+        "Experiment",
+        "Workshop"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q125",
+      "type": "single",
+      "question": "Which of the following describes the confirmation of interview results?",
+      "options": [
+        "Follow-up",
+        "Validation",
+        "Retrospective",
+        "Conclusion"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q126",
+      "type": "single",
+      "question": "What inputs are required to assess business analysis work and to plan to improve processes?",
+      "options": [
+        "Business analysis performance assessment and performance objectives",
+        "Business analysis approach and performance objectives (external)",
+        "Business analysis approach and key performance objectives (internal)",
+        "Business analysis approach and metrics and key performance indicators (KPIs)"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q127",
+      "type": "single",
+      "question": "What are the elements of user stories?",
+      "options": [
+        "Grouping, ranking, negotiation, decision trees",
+        "Main topic, keywords, metrics, indicators",
+        "Conversation, acceptance criteria, title, statement of value",
+        "State tables, flow diagrams, process models, matrices"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q128",
+      "type": "single",
+      "question": "When determining the potential value of a solution, a business analyst (BA) should consider it from the point of view of the:",
+      "options": [
+        "development team.",
+        "testing team.",
+        "customer.",
+        "business analyst."
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q129",
+      "type": "single",
+      "question": "When creating a use case diagram which of the following relationships may a business analyst (BA) use?",
+      "options": [
+        "Extend, include",
+        "Output, input",
+        "Extend, enhance",
+        "Allow, prevent"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q130",
+      "type": "single",
+      "question": "Which element closely describes a business analyst (BA) continually tracking risks for delayed approvals?",
+      "options": [
+        "Monitor stakeholder engagement",
+        "Guide elicitation activity",
+        "Communicate business analysis package",
+        "Collaborate assigned tasks"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q131",
+      "type": "single",
+      "question": "What is the purpose of comparing the results collected through elicitation activities?",
+      "options": [
+        "Classify and organize the results",
+        "Confirm that the information is consistent and accurately represented",
+        "Ensure that information produced is recorded for later reference use",
+        "Validate sufficient information was collected"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q132",
+      "type": "single",
+      "question": "If a stakeholder is looking to understand the logistics and scope of each of the elicitation activities, a business analyst (BA) would share the:",
+      "options": [
+        "elicitation results (confirmed).",
+        "elicitation activity plan.",
+        "stakeholder engagement approach.",
+        "elicitation results (unconfirmed)."
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q133",
+      "type": "single",
+      "question": "Requirements traceability is documented and maintained in accordance with the methods identified by:",
+      "options": [
+        "the business analysis approach.",
+        "the business analysis performance assessment approach.",
+        "the information management approach.",
+        "the governance approach."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q134",
+      "type": "single",
+      "question": "In prioritizing requirements, which of the following factors include difficulty of implementing a requirement, or the likelihood that a requirement cannot deliver its potential value?",
+      "options": [
+        "Penalty",
+        "Cost",
+        "Risk",
+        "Dependency"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q135",
+      "type": "single",
+      "question": "When the focus of the specifying and modelling activity is on a solution, the output is referred to as:",
+      "options": [
+        "design.",
+        "requirement.",
+        "need.",
+        "value."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q136",
+      "type": "single",
+      "question": "Which of the following is an underlying competency whereby the business analyst (BA) understands an enterprise from a holistic point of view?",
+      "options": [
+        "Conceptual thinking",
+        "Systems thinking",
+        "Visual thinking",
+        "Creative thinking"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q137",
+      "type": "single",
+      "question": "Which techniques are used for performing reviews?",
+      "options": [
+        "Inspection, formal walkthrough, desk check",
+        "Mind mapping, decision analysis, interviews",
+        "Brainstorming, functional decomposition, lessons learned",
+        "SWOT analysis, workshop, cost analysis"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q138",
+      "type": "single",
+      "question": "In which requirements prioritization factor would time-to-market scenarios apply?",
+      "options": [
+        "Cost",
+        "Stability",
+        "Time sensitivity",
+        "Regulatory or policy compliance"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q139",
+      "type": "single",
+      "question": "In which requirements analysis and design definition task does a business analyst (BA) consider the opportunity costs?",
+      "options": [
+        "Validate requirements",
+        "Define design options",
+        "Define requirements architecture",
+        "Analyze potential value and recommend solution"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q140",
+      "type": "single",
+      "question": "Which model category would include the techniques of decision modelling and root cause analysis?",
+      "options": [
+        "Activity flow",
+        "Rationale",
+        "People and roles",
+        "Data and information"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q141",
+      "type": "single",
+      "question": "When a potential requirement is identified, what is the next logical step?",
+      "options": [
+        "Maintain",
+        "Trace",
+        "Prioritize",
+        "Assess"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q142",
+      "type": "single",
+      "question": "Which of the following tasks is used to ensure that requirements and designs at different levels are aligned to one another?",
+      "options": [
+        "Gather requirements",
+        "Analyze requirements",
+        "Verify requirements",
+        "Trace requirements"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q143",
+      "type": "single",
+      "question": "What is used for quality control when verifying requirements and designs?",
+      "options": [
+        "Review",
+        "Acceptance and evaluation criteria",
+        "Item tracking",
+        "Checklist"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q144",
+      "type": "single",
+      "question": "In which activity would a business analyst (BA) consider using an organizational Center of Excellence?",
+      "options": [
+        "Defining the limits within which decisions must be made",
+        "Determining the optimal business analysis approach",
+        "Providing techniques and procedures to be followed",
+        "Understanding the stakeholders concerns and interests"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q145",
+      "type": "single",
+      "question": "Which stakeholder has responsibility to review and approve requirements?",
+      "options": [
+        "Sponsor",
+        "Business analyst",
+        "Project manager",
+        "End user"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q146",
+      "type": "single",
+      "question": "When examining requirements relationships, the business analyst (BA) ensures the relationships satisfy the following quality criteria:",
+      "options": [
+        "testable.",
+        "independent.",
+        "measurable.",
+        "unambiguous."
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q147",
+      "type": "single",
+      "question": "Which of the following business analysis tasks is to ensure that requirements and design specifications and models meet quality standards and are usable for the purpose they serve?",
+      "options": [
+        "Manage requirements",
+        "Trace requirements",
+        "Verify requirements",
+        "Validate requirements"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q148",
+      "type": "single",
+      "question": "What prescribes how information may be derived, inferred or calculated based on information available to the business?",
+      "options": [
+        "Definitional business rule",
+        "Business policy",
+        "Behavioural business rule",
+        "Business case"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q149",
+      "type": "single",
+      "question": "Which of the following knowledge areas contain a task that provides stakeholders with the business analysis information after the collated results are confirmed?",
+      "options": [
+        "Business analysis planning and monitoring",
+        "Requirements analysis and design definition",
+        "Requirements life cycle management",
+        "Elicitation and collaboration"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q150",
+      "type": "single",
+      "question": "What characteristic of a process is evaluated during process analysis?",
+      "options": [
+        "How work is carried out",
+        "Efficiency and effectiveness",
+        "Root causes of a problem",
+        "How roles are identified"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q151",
+      "type": "single",
+      "question": "What type of analytical thinking competency involves clearly validating assumptions and measuring alternatives?",
+      "options": [
+        "Decision making",
+        "Problem solving",
+        "Creative thinking",
+        "Systems thinking"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q152",
+      "type": "single",
+      "question": "Which behavioural characteristic of business analysis professionals ensures that the tasks performed meet stakeholder expectations?",
+      "options": [
+        "Personal accountability",
+        "Time management",
+        "Adaptability",
+        "Trustworthiness"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q153",
+      "type": "single",
+      "question": "When reporting business analysis performance, what does the measure of significance indicate?",
+      "options": [
+        "The value delivered by the work products justified the investment to produce them.",
+        "The work products were delivered at a time that fit stakeholder expectations.",
+        "The work products were both complete and accurate.",
+        "The business objectives were met, problems were solved, and improvements achieved."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q154",
+      "type": "single",
+      "question": "When is it appropriate to re-evaluate allocation of design elements between components?",
+      "options": [
+        "Before the final selection",
+        "During regulatory assessment",
+        "After a shortlist is announced",
+        "At any time during evaluation"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q155",
+      "type": "single",
+      "question": "What does a requirement's source, priority, and complexity refer to?",
+      "options": [
+        "Attributes",
+        "Designs",
+        "Functions",
+        "Types"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q156",
+      "type": "single",
+      "question": "What is the foundation for guiding the elicitation effort?",
+      "options": [
+        "Surveys",
+        "Potential value",
+        "Concept model",
+        "Supporting material"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q157",
+      "type": "single",
+      "question": "In which informal technique do multiple reviewers provide verbal or written feedback?",
+      "options": [
+        "Pass around",
+        "Rolling wave",
+        "Inspection",
+        "Single issue review"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q158",
+      "type": "single",
+      "question": "How does the use of a traceability repository help in achieving project goals?",
+      "options": [
+        "Tracks changes to project artifacts",
+        "Stores stakeholder communications",
+        "Identifies and mitigates project risks",
+        "Documents requirements lineage"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q159",
+      "type": "single",
+      "question": "Which of the following is a quality criterion for examining relationships between requirements?",
+      "options": [
+        "Defined",
+        "Valuable",
+        "Relevant",
+        "Complete"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q160",
+      "type": "single",
+      "question": "What is an example of a tacit business rule?",
+      "options": [
+        "Accepted practice",
+        "Corporate contract",
+        "Job aid",
+        "Corporate policy"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q161",
+      "type": "single",
+      "question": "What observation approach involves the observer asking questions as the work is being performed?",
+      "options": [
+        "Passive/Noticeable",
+        "Active/Unnoticeable",
+        "Active/Noticeable",
+        "Passive/Unnoticeable"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q162",
+      "type": "single",
+      "question": "What is the primary purpose of the interview technique?",
+      "options": [
+        "To identify the functional role of the stakeholder",
+        "To establish stakeholder relationships and trust",
+        "To elicit business analysis information",
+        "To view and understand activities and their context"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q163",
+      "type": "single",
+      "question": "Why must business analysis information packages be prepared?",
+      "options": [
+        "To facilitate reviews and approvals",
+        "To plan tasks for the week",
+        "To determine the stakeholder engagement approach",
+        "To determine the information management approach"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q164",
+      "type": "single",
+      "question": "Why consider both tangible and intangible costs and benefits when determining the value of a solution?",
+      "options": [
+        "To ensure the business case template is complete",
+        "To present the case to team leaders",
+        "To present a complete estimate to the business",
+        "To ensure the finance team budgets for the software"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q165",
+      "type": "single",
+      "question": "Which of the following is a common change that can be made to a process in order to improve it?",
+      "options": [
+        "Understand the relationship between gaps and improvement areas",
+        "Automate steps that are more routine and predictable",
+        "Generate and evaluate options",
+        "Analyze the potential impact of the change"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q166",
+      "type": "single",
+      "question": "Which type of requirements are temporary in nature?",
+      "options": [
+        "Solution requirements",
+        "Stakeholder requirements",
+        "Business requirements",
+        "Transition requirements"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q167",
+      "type": "single",
+      "question": "In planning an information management approach, what input element indicates the current status of stored information?",
+      "options": [
+        "Tool",
+        "Organizational standard",
+        "Repository",
+        "Storage decision"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q168",
+      "type": "single",
+      "question": "Which criteria are used to ensure high-quality relationships between requirements?",
+      "options": [
+        "Collaborative and communicated",
+        "Concise and creative",
+        "Correlated and clear",
+        "Consistent and correct"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    },
+    {
+      "id": "Q169",
+      "type": "single",
+      "question": "When undertaking requirements verification, who determines if the requirements captured are of good quality?",
+      "options": [
+        "Stakeholders using them",
+        "Business analysis professional writing them",
+        "Business customers once delivered",
+        "Project manager reviewing them"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "",
+      "tags": [
+        "Topic 1"
+      ]
+    }
+  ]
+}

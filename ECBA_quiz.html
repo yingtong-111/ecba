@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ECBA Quiz Trainer (Local)</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+           margin: 0; padding: 0; background: #0b1020; color: #e8eefc; }
+    .app { max-width: 980px; margin: 0 auto; padding: 22px; }
+    .topbar { display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .brand { font-weight: 700; letter-spacing: 0.2px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .btn { appearance:none; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.08);
+           color: inherit; padding: 10px 12px; border-radius: 12px; cursor:pointer; font-weight: 600; }
+    .btn:hover { background: rgba(255,255,255,0.12); }
+    .btn.primary { background: rgba(99,102,241,0.55); border-color: rgba(99,102,241,0.9); }
+    .btn.primary:hover { background: rgba(99,102,241,0.65); }
+    .btn.danger { background: rgba(239,68,68,0.25); border-color: rgba(239,68,68,0.55); }
+    .btn.good { background: rgba(34,197,94,0.20); border-color: rgba(34,197,94,0.55); }
+    .btn.warn { background: rgba(245,158,11,0.18); border-color: rgba(245,158,11,0.55); }
+    .btn.ghost { background: transparent; }
+    .muted { color: rgba(232,238,252,0.72); }
+    .pill { display:inline-flex; align-items:center; gap:8px; padding: 6px 10px; border-radius: 999px;
+            background: rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); }
+    .kpi { display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
+    .kpi .pill b { font-variant-numeric: tabular-nums; }
+    .qtitle { font-size: 18px; line-height: 1.35; margin: 0 0 14px 0; }
+    .opts { display:grid; gap:10px; }
+    label.opt { display:flex; gap:10px; align-items:flex-start; padding: 12px; border-radius: 14px;
+                border:1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.05); cursor:pointer; }
+    label.opt:hover { background: rgba(255,255,255,0.08); }
+    input[type="radio"], input[type="checkbox"] { margin-top: 2px; }
+    .opt.correct { border-color: rgba(34,197,94,0.6); background: rgba(34,197,94,0.10); }
+    .opt.wrong { border-color: rgba(239,68,68,0.6); background: rgba(239,68,68,0.10); }
+    .footer { margin-top: 18px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between; }
+    .divider { height:1px; background: rgba(255,255,255,0.10); margin: 14px 0; }
+    .small { font-size: 12px; }
+    .grid2 { display:grid; grid-template-columns: 1.2fr 0.8fr; gap: 14px; }
+    @media (max-width: 900px){ .grid2 { grid-template-columns: 1fr; } }
+    .input { padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.15);
+             background: rgba(0,0,0,0.20); color: inherit; outline: none; }
+    a { color: #a5b4fc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .toast { position: fixed; right: 16px; bottom: 16px; padding: 12px 14px; border-radius: 12px;
+             background: rgba(0,0,0,0.75); border: 1px solid rgba(255,255,255,0.14); display:none; max-width: 420px;}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div class="brand">ECBA Quiz Trainer <span class="muted small">(local, Anki-style)</span></div>
+      <div class="row">
+        <button class="btn" id="btnLoadSample">Load ECBA JSON (from file)</button>
+        <label class="btn">
+          Import JSON <input id="fileInput" type="file" accept=".json,application/json" style="display:none" />
+        </label>
+        <button class="btn danger" id="btnResetAll">Reset Progress</button>
+      </div>
+    </div>
+
+    <div class="kpi" id="kpis"></div>
+
+    <div class="grid2" style="margin-top:14px;">
+      <div class="card">
+        <div class="row" style="justify-content:space-between; align-items:center;">
+          <div class="pill"><span>Mode</span> <b id="modeLabel">Today</b></div>
+          <div class="row">
+            <button class="btn" id="btnToday">Today</button>
+            <button class="btn" id="btnWrong">Wrong only</button>
+            <button class="btn" id="btnAll">All (shuffle)</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div id="emptyState" class="muted">
+          No question bank loaded yet. Click <b>Import JSON</b> and choose your file (e.g. ECBA_question_bank.json).
+        </div>
+
+        <div id="quiz" style="display:none;">
+          <div class="pill small muted" id="qMeta"></div>
+          <h2 class="qtitle" id="qText"></h2>
+          <div class="opts" id="options"></div>
+
+          <div class="footer">
+            <div class="row">
+              <button class="btn primary" id="btnSubmit">Submit</button>
+              <button class="btn" id="btnReveal">Reveal Answer</button>
+              <button class="btn ghost" id="btnSkip">Skip</button>
+            </div>
+            <div class="muted small" id="progressText"></div>
+          </div>
+
+          <div id="result" style="display:none; margin-top:14px;">
+            <div class="pill" id="resultPill"></div>
+            <div class="divider"></div>
+            <div class="muted" id="explain"></div>
+            <div class="divider"></div>
+            <div class="row">
+              <button class="btn danger" data-rate="again">Again</button>
+              <button class="btn warn" data-rate="hard">Hard</button>
+              <button class="btn good" data-rate="good">Good</button>
+              <button class="btn primary" data-rate="easy">Easy</button>
+            </div>
+            <div class="muted small" id="scheduleInfo" style="margin-top:10px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pill"><span>Settings</span></div>
+        <div class="divider"></div>
+        <div class="row" style="align-items:center; justify-content:space-between;">
+          <div>
+            <div><b>Daily new limit</b></div>
+            <div class="muted small">How many unseen questions to add into Today after due reviews.</div>
+          </div>
+          <input class="input" id="dailyNew" type="number" min="0" max="200" style="width:110px;" />
+        </div>
+        <div class="divider"></div>
+        <div class="row" style="align-items:center; justify-content:space-between;">
+          <div>
+            <div><b>Auto-clear wrong</b></div>
+            <div class="muted small">If a wrong question is answered correctly with Good/Easy twice in a row, remove from wrong list.</div>
+          </div>
+          <input id="autoClearWrong" type="checkbox" />
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+          <button class="btn" id="btnExport">Export Progress JSON</button>
+          <button class="btn" id="btnClearBank">Remove Bank</button>
+        </div>
+        <div class="divider"></div>
+        <div class="muted small">
+          Tips:
+          <ul>
+            <li>Import your <b>ECBA_question_bank.json</b> file.</li>
+            <li>Use <b>Today</b> for Anki-style review scheduling.</li>
+            <li>Use <b>Wrong only</b> to focus your weak points.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  const LS_KEYS = {
+    bank: "ecba_bank_v1",
+    progress: "ecba_progress_v1",
+    settings: "ecba_settings_v1",
+    daySeed: "ecba_daySeed_v1"
+  };
+
+  /** ---------- Utilities ---------- **/
+  const now = () => Date.now();
+  const minutes = (n) => n * 60 * 1000;
+  const days = (n) => n * 24 * 60 * 60 * 1000;
+
+  function toast(msg){
+    const el = document.getElementById("toast");
+    el.textContent = msg;
+    el.style.display = "block";
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(()=>{ el.style.display="none"; }, 2200);
+  }
+
+  function safeJsonParse(str){
+    try { return JSON.parse(str); } catch(e){ return null; }
+  }
+
+  function clamp(n, lo, hi){ return Math.max(lo, Math.min(hi, n)); }
+  function round(n){ return Math.round(n); }
+
+  function getTodayKey(){
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth()+1).padStart(2,"0");
+    const da = String(d.getDate()).padStart(2,"0");
+    return `${y}-${m}-${da}`;
+  }
+
+  // deterministic shuffle by day + bank size
+  function mulberry32(a) {
+    return function() {
+      var t = a += 0x6D2B79F5;
+      t = Math.imul(t ^ t >>> 15, t | 1);
+      t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+  }
+  function seededShuffle(arr, seed){
+    const rng = mulberry32(seed);
+    const a = arr.slice();
+    for(let i=a.length-1; i>0; i--){
+      const j = Math.floor(rng()*(i+1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  /** ---------- Storage ---------- **/
+  function loadBank(){
+    const s = localStorage.getItem(LS_KEYS.bank);
+    return s ? safeJsonParse(s) : null;
+  }
+  function saveBank(bank){
+    localStorage.setItem(LS_KEYS.bank, JSON.stringify(bank));
+  }
+  function clearBank(){
+    localStorage.removeItem(LS_KEYS.bank);
+  }
+  function loadProgress(){
+    const s = localStorage.getItem(LS_KEYS.progress);
+    return s ? safeJsonParse(s) : {};
+  }
+  function saveProgress(map){
+    localStorage.setItem(LS_KEYS.progress, JSON.stringify(map));
+  }
+  function loadSettings(){
+    const s = localStorage.getItem(LS_KEYS.settings);
+    const base = { dailyNewLimit: 20, autoClearWrong: true };
+    const parsed = s ? safeJsonParse(s) : null;
+    return Object.assign(base, parsed || {});
+  }
+  function saveSettings(st){
+    localStorage.setItem(LS_KEYS.settings, JSON.stringify(st));
+  }
+
+  function getOrSetDaySeed(){
+    const todayKey = getTodayKey();
+    const s = localStorage.getItem(LS_KEYS.daySeed);
+    const parsed = s ? safeJsonParse(s) : null;
+    if(parsed && parsed.date === todayKey) return parsed.seed;
+    // new seed for today
+    const seed = Math.floor(Math.random() * 1e9);
+    localStorage.setItem(LS_KEYS.daySeed, JSON.stringify({ date: todayKey, seed }));
+    return seed;
+  }
+
+  /** ---------- Model helpers ---------- **/
+  function defaultProgress(){
+    return {
+      state: "new",          // new | learning | review
+      due: 0,
+      intervalDays: 0,
+      ease: 2.5,
+      lapses: 0,
+      correctStreak: 0,
+      totalAttempts: 0,
+      totalCorrect: 0,
+      lastReviewedAt: 0,
+      isWrong: false,
+      wrongClearStreak: 0    // consecutive correct ratings (good/easy) while isWrong
+    };
+  }
+
+  function ensureProgress(progressMap, qid){
+    if(!progressMap[qid]) progressMap[qid] = defaultProgress();
+    return progressMap[qid];
+  }
+
+  function normalizeType(q){
+    if(q.type === "multi") return "multi";
+    if(q.type === "tf") return "tf";
+    return "single";
+  }
+
+  /** ---------- Scheduler (Simplified SM-2) ---------- **/
+  function applyRating(p, rating){
+    const t = now();
+    const prevEase = p.ease;
+
+    if(rating === "again"){
+      p.state = "learning";
+      p.lapses += 1;
+      p.correctStreak = 0;
+      p.intervalDays = 0;
+      p.due = t + minutes(10);
+      p.ease = Math.max(1.3, p.ease - 0.2);
+      p.isWrong = true;
+      p.wrongClearStreak = 0;
+    } else if(rating === "hard"){
+      if(p.state === "new") p.state = "learning";
+      const base = p.intervalDays && p.intervalDays > 0 ? p.intervalDays : 1;
+      p.intervalDays = Math.max(1, round(base * 1.2));
+      p.due = t + days(p.intervalDays);
+      p.ease = Math.max(1.3, p.ease - 0.05);
+    } else if(rating === "good"){
+      if(p.state === "new"){
+        p.state = "learning";
+        p.intervalDays = 1;
+        p.due = t + days(1);
+      } else {
+        const base = p.intervalDays && p.intervalDays > 0 ? p.intervalDays : 1;
+        p.intervalDays = Math.max(1, round(base * p.ease));
+        p.due = t + days(p.intervalDays);
+      }
+      p.correctStreak += 1;
+      if(p.correctStreak >= 3) p.state = "review";
+    } else if(rating === "easy"){
+      if(p.state === "new"){
+        p.state = "review";
+        p.intervalDays = 3;
+        p.due = t + days(3);
+      } else {
+        const base = p.intervalDays && p.intervalDays > 0 ? p.intervalDays : 2;
+        p.intervalDays = Math.max(2, round(base * p.ease * 1.3));
+        p.due = t + days(p.intervalDays);
+        p.ease = p.ease + 0.05;
+      }
+      p.correctStreak += 1;
+      if(p.correctStreak >= 3) p.state = "review";
+    }
+
+    p.lastReviewedAt = t;
+    return { prevEase, nextEase: p.ease, due: p.due, intervalDays: p.intervalDays };
+  }
+
+  /** ---------- Quiz logic ---------- **/
+  let bank = loadBank();
+  let progressMap = loadProgress();
+  let settings = loadSettings();
+
+  let mode = "today"; // today | wrong | all
+  let queue = [];
+  let index = 0;
+  let current = null;
+  let lastWasCorrect = null;
+  let submitted = false;
+
+  // DOM
+  const elEmpty = document.getElementById("emptyState");
+  const elQuiz = document.getElementById("quiz");
+  const elKpis = document.getElementById("kpis");
+  const elModeLabel = document.getElementById("modeLabel");
+  const elQMeta = document.getElementById("qMeta");
+  const elQText = document.getElementById("qText");
+  const elOptions = document.getElementById("options");
+  const elResult = document.getElementById("result");
+  const elResultPill = document.getElementById("resultPill");
+  const elExplain = document.getElementById("explain");
+  const elScheduleInfo = document.getElementById("scheduleInfo");
+  const elProgressText = document.getElementById("progressText");
+
+  // Settings UI
+  const dailyNewInput = document.getElementById("dailyNew");
+  const autoClearInput = document.getElementById("autoClearWrong");
+  dailyNewInput.value = settings.dailyNewLimit;
+  autoClearInput.checked = !!settings.autoClearWrong;
+  dailyNewInput.addEventListener("change", ()=>{
+    settings.dailyNewLimit = clamp(parseInt(dailyNewInput.value||"20",10), 0, 200);
+    saveSettings(settings);
+    rebuildQueue();
+    toast("Saved settings");
+  });
+  autoClearInput.addEventListener("change", ()=>{
+    settings.autoClearWrong = !!autoClearInput.checked;
+    saveSettings(settings);
+    toast("Saved settings");
+  });
+
+  function validateBank(obj){
+    if(!obj || typeof obj !== "object") return "Invalid JSON root.";
+    if(!obj.questions || !Array.isArray(obj.questions)) return "Missing questions[]";
+    // quick sanity check
+    for(let i=0; i<Math.min(5,obj.questions.length); i++){
+      const q = obj.questions[i];
+      if(!q.id || !q.question || !Array.isArray(q.options) || !Array.isArray(q.answer)){
+        return "Question format invalid (id/question/options/answer).";
+      }
+    }
+    return null;
+  }
+
+  function setBank(newBank){
+    const err = validateBank(newBank);
+    if(err){ alert("Import failed: " + err); return; }
+    bank = newBank;
+    saveBank(bank);
+    // ensure progress exists for ids as needed lazily
+    rebuildQueue();
+    render();
+    toast("Question bank loaded");
+  }
+
+  function computeStats(){
+    if(!bank) return { total:0, due:0, wrong:0, learned:0 };
+    const total = bank.questions.length;
+    let due = 0, wrong = 0, learned = 0;
+    const t = now();
+    for(const q of bank.questions){
+      const p = progressMap[q.id];
+      if(p){
+        if(p.isWrong) wrong++;
+        if(p.due && p.due <= t) due++;
+        if(p.totalAttempts > 0) learned++;
+      }
+    }
+    return { total, due, wrong, learned };
+  }
+
+  function buildTodayQueue(){
+    const t = now();
+    const due = [];
+    const fresh = [];
+    for(const q of bank.questions){
+      const p = progressMap[q.id];
+      if(p && p.due && p.due <= t){
+        due.push(q.id);
+      } else if(!p || p.totalAttempts === 0){
+        fresh.push(q.id);
+      }
+    }
+    // deterministic shuffle new questions for today
+    const seed = getOrSetDaySeed();
+    const freshShuffled = seededShuffle(fresh, seed);
+    const newLimited = freshShuffled.slice(0, settings.dailyNewLimit);
+    // sort due by due time
+    due.sort((a,b)=> (progressMap[a]?.due||0) - (progressMap[b]?.due||0));
+    return due.concat(newLimited);
+  }
+
+  function buildWrongQueue(){
+    const ids = [];
+    for(const q of bank.questions){
+      const p = progressMap[q.id];
+      if(p && p.isWrong) ids.push(q.id);
+    }
+    return ids;
+  }
+
+  function buildAllQueue(){
+    const ids = bank.questions.map(q=>q.id);
+    // shuffle
+    const seed = Math.floor(Math.random() * 1e9);
+    return seededShuffle(ids, seed);
+  }
+
+  function rebuildQueue(){
+    if(!bank){ queue=[]; index=0; current=null; return; }
+    if(mode === "today") queue = buildTodayQueue();
+    if(mode === "wrong") queue = buildWrongQueue();
+    if(mode === "all") queue = buildAllQueue();
+    index = 0;
+    current = null;
+    submitted = false;
+  }
+
+  function getQuestionById(id){
+    return bank.questions.find(q=>q.id === id) || null;
+  }
+
+  function renderKpis(){
+    const s = computeStats();
+    elKpis.innerHTML = `
+      <span class="pill">Total <b>${s.total}</b></span>
+      <span class="pill">Due <b>${s.due}</b></span>
+      <span class="pill">Wrong <b>${s.wrong}</b></span>
+      <span class="pill">Attempted <b>${s.learned}</b></span>
+      <span class="pill muted">Daily new <b>${settings.dailyNewLimit}</b></span>
+    `;
+  }
+
+  function resetCardUI(){
+    elResult.style.display = "none";
+    elExplain.textContent = "";
+    elScheduleInfo.textContent = "";
+    submitted = false;
+    lastWasCorrect = null;
+  }
+
+  function renderQuestion(){
+    if(!bank){ return; }
+    if(queue.length === 0){
+      elQMeta.textContent = "No items in this mode.";
+      elQText.textContent = mode === "today" ? "You're done for today 🎉" : "No questions to show.";
+      elOptions.innerHTML = "";
+      document.getElementById("btnSubmit").disabled = true;
+      document.getElementById("btnReveal").disabled = true;
+      document.getElementById("btnSkip").disabled = true;
+      elProgressText.textContent = "";
+      resetCardUI();
+      return;
+    }
+    if(index >= queue.length) index = 0;
+    const qid = queue[index];
+    current = getQuestionById(qid);
+    if(!current){
+      index++; renderQuestion(); return;
+    }
+
+    document.getElementById("btnSubmit").disabled = false;
+    document.getElementById("btnReveal").disabled = false;
+    document.getElementById("btnSkip").disabled = false;
+
+    const tags = (current.tags && current.tags.length) ? current.tags.join(", ") : "";
+    elQMeta.textContent = `${current.id} • ${normalizeType(current)} ${tags ? "• " + tags : ""}`;
+    elQText.textContent = current.question;
+
+    // options
+    const type = normalizeType(current);
+    const inputType = type === "multi" ? "checkbox" : "radio";
+    elOptions.innerHTML = "";
+    current.options.forEach((opt, i)=>{
+      const id = `opt_${i}`;
+      const label = document.createElement("label");
+      label.className = "opt";
+      label.setAttribute("for", id);
+      label.innerHTML = `
+        <input id="${id}" name="opt" type="${inputType}" value="${i}" />
+        <div><b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(opt)}</div>
+      `;
+      elOptions.appendChild(label);
+    });
+
+    elProgressText.textContent = `Card ${index+1} / ${queue.length}`;
+    resetCardUI();
+  }
+
+  function escapeHtml(s){
+    return (s||"").replace(/[&<>"']/g, (m)=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;" }[m]));
+  }
+
+  function getSelectedIndices(){
+    const inputs = elOptions.querySelectorAll("input");
+    const sel = [];
+    inputs.forEach(inp=>{
+      if(inp.checked) sel.push(parseInt(inp.value,10));
+    });
+    sel.sort((a,b)=>a-b);
+    return sel;
+  }
+
+  function arraysEqual(a,b){
+    if(a.length !== b.length) return false;
+    for(let i=0;i<a.length;i++) if(a[i]!==b[i]) return false;
+    return true;
+  }
+
+  function markOptions(correctIdx, selectedIdx){
+    const labels = elOptions.querySelectorAll("label.opt");
+    labels.forEach((lab, i)=>{
+      lab.classList.remove("correct","wrong");
+      const isCorrect = correctIdx.includes(i);
+      const isSelected = selectedIdx.includes(i);
+      if(isCorrect) lab.classList.add("correct");
+      if(isSelected && !isCorrect) lab.classList.add("wrong");
+    });
+  }
+
+  function onSubmit(revealOnly=false){
+    if(!current || submitted) return;
+    const selected = getSelectedIndices();
+    const correct = (current.answer || []).slice().sort((a,b)=>a-b);
+    const isCorrect = arraysEqual(selected, correct);
+    submitted = true;
+    lastWasCorrect = isCorrect;
+
+    // progress update on submit
+    const p = ensureProgress(progressMap, current.id);
+    p.totalAttempts += 1;
+    if(isCorrect){
+      p.totalCorrect += 1;
+      // keep correctStreak update handled by rating for good/easy; but track wrong clear streak here
+      if(p.isWrong){
+        // will only count if user chooses good/easy
+      }
+    } else {
+      p.isWrong = true;
+      p.correctStreak = 0;
+      p.wrongClearStreak = 0;
+    }
+    saveProgress(progressMap);
+
+    markOptions(correct, selected);
+
+    elResult.style.display = "block";
+    elResultPill.textContent = isCorrect ? "✅ Correct" : "❌ Incorrect";
+    elResultPill.className = "pill " + (isCorrect ? "" : ""); // keep style simple
+
+    const exp = current.explanation ? current.explanation.trim() : "";
+    elExplain.innerHTML = exp ? `<b>Explanation:</b><br>${escapeHtml(exp)}` : `<span class="muted">No explanation provided in source.</span>`;
+    elScheduleInfo.textContent = "Now choose a rating to schedule the next review.";
+    renderKpis();
+  }
+
+  function onReveal(){
+    if(!current || submitted) return;
+    // reveal without counting attempt? We'll count as attempt because user saw answer; but keep it simple:
+    const p = ensureProgress(progressMap, current.id);
+    p.totalAttempts += 1;
+    p.isWrong = true; // if you reveal, treat as wrong so it returns soon
+    p.correctStreak = 0;
+    p.wrongClearStreak = 0;
+    saveProgress(progressMap);
+
+    const correct = (current.answer || []).slice().sort((a,b)=>a-b);
+    markOptions(correct, []);
+    submitted = true;
+    lastWasCorrect = false;
+
+    elResult.style.display = "block";
+    elResultPill.textContent = "👀 Revealed";
+    const exp = current.explanation ? current.explanation.trim() : "";
+    elExplain.innerHTML = exp ? `<b>Explanation:</b><br>${escapeHtml(exp)}` : `<span class="muted">No explanation provided in source.</span>`;
+    elScheduleInfo.textContent = "Choose a rating. (Hint: Again is a good default after revealing.)";
+    renderKpis();
+  }
+
+  function formatDue(ts){
+    const d = new Date(ts);
+    return d.toLocaleString();
+  }
+
+  function handleRating(rating){
+    if(!current || !submitted) return;
+    const p = ensureProgress(progressMap, current.id);
+
+    // If user got it correct but hit Again, keep wrong. If correct & good/easy, count towards wrong clear streak
+    if(p.isWrong && (rating === "good" || rating === "easy") && lastWasCorrect === true){
+      p.wrongClearStreak = (p.wrongClearStreak || 0) + 1;
+      if(settings.autoClearWrong && p.wrongClearStreak >= 2){
+        p.isWrong = false;
+        p.wrongClearStreak = 0;
+      }
+    } else if(p.isWrong && rating === "again"){
+      p.wrongClearStreak = 0;
+    }
+
+    const sched = applyRating(p, rating);
+    saveProgress(progressMap);
+    renderKpis();
+
+    elScheduleInfo.textContent =
+      `Scheduled: ${p.intervalDays} day(s), due ${formatDue(p.due)} • ease ${sched.prevEase.toFixed(2)} → ${sched.nextEase.toFixed(2)}`
+      + (p.isWrong ? " • still in Wrong" : "");
+
+    // advance after a short delay
+    setTimeout(()=>{
+      index += 1;
+      // if wrong mode and it got cleared, rebuild to remove it
+      if(mode === "wrong") rebuildQueue();
+      renderQuestion();
+    }, 180);
+  }
+
+  function render(){
+    renderKpis();
+    elModeLabel.textContent = mode === "today" ? "Today" : (mode === "wrong" ? "Wrong only" : "All (shuffle)");
+    if(!bank){
+      elEmpty.style.display = "block";
+      elQuiz.style.display = "none";
+      return;
+    }
+    elEmpty.style.display = "none";
+    elQuiz.style.display = "block";
+    renderQuestion();
+  }
+
+  /** ---------- Wire up buttons ---------- **/
+  document.getElementById("btnToday").addEventListener("click", ()=>{
+    mode = "today"; rebuildQueue(); render(); toast("Mode: Today");
+  });
+  document.getElementById("btnWrong").addEventListener("click", ()=>{
+    mode = "wrong"; rebuildQueue(); render(); toast("Mode: Wrong only");
+  });
+  document.getElementById("btnAll").addEventListener("click", ()=>{
+    mode = "all"; rebuildQueue(); render(); toast("Mode: All shuffle");
+  });
+
+  document.getElementById("btnSubmit").addEventListener("click", ()=> onSubmit(false));
+  document.getElementById("btnReveal").addEventListener("click", ()=> onReveal());
+  document.getElementById("btnSkip").addEventListener("click", ()=>{
+    index += 1; renderQuestion();
+  });
+
+  document.getElementById("result").addEventListener("click", (e)=>{
+    const btn = e.target.closest("button[data-rate]");
+    if(!btn) return;
+    handleRating(btn.getAttribute("data-rate"));
+  });
+
+  // Import JSON
+  const fileInput = document.getElementById("fileInput");
+  fileInput.addEventListener("change", async (e)=>{
+    const file = e.target.files && e.target.files[0];
+    if(!file) return;
+    const text = await file.text();
+    const obj = safeJsonParse(text);
+    if(!obj){ alert("Invalid JSON file."); return; }
+    setBank(obj);
+    fileInput.value = "";
+  });
+
+  // Load ECBA JSON by file (same as import, but prompts user to pick)
+  document.getElementById("btnLoadSample").addEventListener("click", ()=>{
+    // This just opens file picker; user selects ECBA_question_bank.json
+    fileInput.click();
+  });
+
+  // Reset progress
+  document.getElementById("btnResetAll").addEventListener("click", ()=>{
+    if(!confirm("Reset ALL progress and wrong list? (Bank stays)")) return;
+    progressMap = {};
+    saveProgress(progressMap);
+    rebuildQueue();
+    render();
+    toast("Progress reset");
+  });
+
+  // Export progress
+  document.getElementById("btnExport").addEventListener("click", ()=>{
+    const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), progress: progressMap, settings }, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "ecba_progress_export.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+
+  // Remove bank
+  document.getElementById("btnClearBank").addEventListener("click", ()=>{
+    if(!confirm("Remove question bank from browser storage?")) return;
+    clearBank();
+    bank = null;
+    queue = [];
+    current = null;
+    render();
+    toast("Bank removed");
+  });
+
+  // Initial
+  rebuildQueue();
+  render();
+
+})();
+</script>
+</body>
+</html>
